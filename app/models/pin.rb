@@ -9,9 +9,8 @@ class Pin < ActiveRecord::Base
                             size: { less_than: 5.megabytes }
   belongs_to :user
 
-	def image_remote_url=(url_value)
+	def image_remote_url = (url_value)
 		super
 		self.image = URI.parse(url_value) unless url_value.blank?
-		
-	end
+		end
 end
