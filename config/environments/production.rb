@@ -67,7 +67,7 @@ Omrails::Application.configure do
 
   #In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-end
+
 # configing amazon s3 for paperclip file uploads
 # config/environments/production.rb
 config.paperclip_defaults = {
@@ -78,3 +78,4 @@ config.paperclip_defaults = {
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
 }
+end
