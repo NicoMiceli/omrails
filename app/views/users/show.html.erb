@@ -2,6 +2,9 @@
 
 <div id="pins">
 	<%= render @pins %>
+	<script>
+	console.log("<%= @user.name %>") 
+	</script>
 </div>
 
 <%= will_paginate @pins %>
