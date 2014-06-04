@@ -4,7 +4,9 @@
 	<%= render @pins %>
 	<script>
 	console.log("<%= @user.name %>")
-	dataLayer.push({'userName': '<%= @user.name %>'}); 
+	dataLayer.push({'userName': '<%= @user.name %>',
+		'screen': '<%= @user.name %> - profile page'
+	}); 
 	</script>
 </div>
 

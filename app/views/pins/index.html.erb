@@ -1,6 +1,9 @@
 <%= render 'pages/home' %>
 <div id="pins">
 	<%= render @pins %>
+	<script>
+	dataLayer.push({'screenName': 'home'}); 
+	</script>
 </div>
 
 <%= will_paginate @pins %>
