@@ -3,7 +3,8 @@
 <div id="pins">
 	<%= render @pins %>
 	<script>
-	console.log("<%= @user.name %>") 
+	console.log("<%= @user.name %>")
+	dataLayer.push({'userName': '<%= @user.name %>'}); 
 	</script>
 </div>
 
